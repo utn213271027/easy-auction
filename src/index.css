@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.imageLogo{
+  height: 2rem;
+}
+.link{
+  color: #ffffff;
+  text-decoration: none;
+}
+.linkPages{
+  color: #000000;
+  text-decoration: none;
+}
+.linkPages:hover{
+  color: #000000;
+}
+.link:hover{
+  color: #D0C9C0;
+}

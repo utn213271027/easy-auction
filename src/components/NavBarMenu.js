@@ -1,5 +1,6 @@
 import React from 'react'
-import { Button, Container, Image, Nav, Navbar } from 'react-bootstrap'
+import { Container, Image, Nav, Navbar } from 'react-bootstrap'
+import Button from '@mui/material/Button'; //importacion de Libreria MUI
 import { Link } from 'react-router-dom'
 import Logo from '../images/logoSub.svg'
 function NavBarMenu() {
@@ -19,7 +20,9 @@ function NavBarMenu() {
                     </Nav>
                     <Nav>
                         <Link className='link' to={{ pathname: "/register" }}><Button type="button" variant="success" size="sm" className="m-1">Registrate</Button></Link>
-                        <Link className='link' to={{ pathname: "/auth" }}><Button type="button" variant="primary" size="sm" className="m-1">Inicia sesión</Button></Link>
+                        <Link className='link' to={{ pathname: "/auth" }}><Button type="button" variant="contained" size="sm" className="m-1">Inicia sesión</Button></Link>
+                        {/* se añade un boton con la libreria de MUI */}
+                        <Button variant="outlined" color="primary" size="small" >Hello World</Button>;
                     </Nav>
                 </Navbar.Collapse>
             </Container>
